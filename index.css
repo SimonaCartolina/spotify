@@ -1,0 +1,1641 @@
+/*DESKTOP*/
+@media screen and (min-width:992px) {
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 2s ease;
+    }
+    
+    
+    main{
+        height:90vh;
+        width:100%;
+    }
+    h2{
+        margin-top:1rem;
+        font-size:1.2rem;
+    }
+    .testo-albums h3{
+        font-size:0.83rem;
+        margin-bottom:0.30rem;
+    }
+    ul{
+        margin-bottom:0.90rem;
+    }
+    li{
+        list-style: none;
+        margin-top:0.77rem;
+    }
+    
+    .container{
+        display:flex;
+        flex-direction: row;
+        height:100%;
+        width:100%;
+    }
+    
+    /*MENU*/
+    
+    .menu{
+        width:250px;
+        height:90vh;
+        background-color:#000000;
+        padding-left:1rem;
+        overflow:scroll;
+    }
+    #spotify{
+        font-size:1.2rem;
+        position:relative;
+        bottom:0.70rem;
+    }
+    
+    .menu .fa-spotify{
+        font-size:2rem;
+    }
+    .menu .logo{
+        padding-top:1rem;
+        padding-bottom:0.75rem;
+    }
+    .menu h2{
+        font-size:0.82rem;
+    }
+    .menu img{
+        padding-top:1.5rem;
+    }
+    
+    .menu i{
+        font-size:1rem;
+        margin-right:0.30rem;
+    }
+    .menu .fa-square-plus{
+        font-size:2rem;
+    }
+    .menu .crea-playlist{
+        position:relative;
+        bottom:0.45rem;
+        font-size: 0.70rem;
+    
+    }
+    .foot-menu{
+        position:relative;
+        top:52%;
+    }
+    .foot-menu p{
+        border-top:1px solid gray;
+        font-size:0.72rem;
+        padding-top:0.40rem;
+        margin-top:0.40rem;
+    }
+    
+    .foot-menu .white{
+        font-size:0.80rem;
+    
+    }
+    /* EFFETTUA L' UPGRADE*/
+    
+    .upgrade{
+        height:10%;
+        width:100%;
+        background-color:#080B12;
+        padding-right:1rem;
+        padding-top:0.70rem;
+    }
+    
+    .upgrade div{
+        position:relative;
+        left:78%;
+        width:23%;
+        text-align:center;
+        font-size:0.60rem;
+        padding: 0.80rem;
+        border: 1px solid white;
+        background-color: rgba(2, 1, 42, 0.645);
+        border-radius:25px;
+    }
+    /* NAV TASTI IN EVIDENZA, SOTTO "effettua l' upgrade"*/
+    
+    .evidenza{
+        height:10%;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top:1rem;
+        background-color: #141922;
+    }
+    .evidenza div{
+        margin-right:1rem;
+        font-size:0.70rem;
+    }
+    
+    /*MAIN PART WITH ALBUMS*/
+    
+    .contents{
+        overflow: scroll;
+        height:80%;
+        background-color: #141922;
+        width:100%;
+        padding-left:1.5rem;
+    }
+    .square{
+        width:calc(100% / 6 - 1rem);
+        height: 15.5%;
+        margin-right:1rem;
+    }
+    .border-radius img{
+        border-radius: 50%;
+    }
+    
+    .albums{
+        margin-top:1.7rem;
+        margin-bottom:7rem;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+    }
+    .albums img{
+        width:100%;
+        height:100%;
+        margin-bottom:0.80rem;
+        object-fit: cover;
+        display:block;
+    }
+    .testo-albums{
+        text-align:center;
+        font-size:0.60rem;
+    }
+    
+    /*FOOTER*/
+    footer{
+        width: 100%;
+        height:10vh;
+        background-color: #282828;
+        position:fixed;
+        z-index:1;
+    }
+    
+    .container-footer{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        padding:0.95rem;
+    }
+    
+    .flex-row{
+        display:flex;
+        flex-direction:row;
+    }
+    
+    
+    .container-sinister{
+        width:2.5rem;
+        height:2.5rem;
+        margin-right:0.50rem;
+    }
+    .container-sinister img{
+        width:100%;
+        object-fit: cover;
+        display:block;
+    }
+    
+    
+    
+    .icons{
+        margin-left:2.5rem;
+    }
+    .icons i{
+        padding-top:0.55rem;
+        margin-right:0.80rem;
+        font-size:0.80rem;
+    }
+    
+    
+    .music{
+        font-size: 1.2rem;
+        margin-right:2rem;
+    }
+    .music i{
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+    
+    
+    /* classi di colori generali per il colore del testo*/
+    
+    .text-gray{
+        color:gray;
+        font-size:0.60rem;
+    }
+    .text-white{
+        color:white;
+        font-size:0.60rem;
+    }
+    
+    .flex-column{
+        display:flex;
+        flex-direction:column;
+    }
+    
+    /*BARRA VOLUME*/ 
+    
+    .barra-volume{
+        background-color: white;
+        border-radius: 20px;
+        align-self:center;
+        height:0.20rem;
+        width:7rem;
+        margin-bottom:0.50rem;
+        position:relative;
+    }
+    .ball-volume{
+        background-color: white;
+        height:0.75rem;
+        width:0.75rem;
+        border-radius:50%;
+        display:none;
+    
+        position:absolute;
+        bottom:0.090rem;
+        top:0.0001rem;
+        left:18%;
+    }
+    /*barra volume grande*/
+    .grande{
+        width:20rem;
+        margin:0 0.50rem 0 0.50rem;
+        margin-right:10rem;
+    }
+    .container-barragrande{
+        margin-top:0.50rem;
+        padding-left:2.5rem;
+    }
+    .volume{
+        background-color: lightgreen;
+        width:20%;
+        height:100%;
+        display:none;
+    }
+    .barra-volume:active .volume{
+        display:block;
+        transition: 1s ease-in;
+    }
+    .barra-volume:active .ball-volume{
+        display:block;
+        transition: 1s ease-in;
+    
+    }
+    
+    .text-gray:hover{
+        color:white;
+        transition: all 0.80s ease;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    .brano:hover{
+        text-decoration: underline;
+    }
+    
+
+
+    
+}
+
+
+
+/*TABLET*/
+
+@media  screen and (min-width:768px) and (max-width:991px) {
+
+    .contents h2{
+        margin-top:1.5rem;
+        font-size:1.12rem;
+    }
+
+    div.last-icons{
+        position:relative;
+        right:1rem;
+    }
+
+    p.brano{
+        display:inline-block;
+        width:3.9rem;
+    }
+
+    .square{
+        width:calc(100% / 4 - 0.50rem);
+        height: 24%;
+        margin-right:0.50rem;
+    }
+
+    .fifth-square,
+    .sixth-square{
+        margin-top:7rem;
+    }
+
+    .foot-menu{
+            position:relative;
+            top:52%;
+        }
+        
+
+
+    .upgrade div{
+        position:relative;
+        left:72%;
+        width:30%;
+        text-align:center;
+        font-size:0.60rem;
+        padding: 0.80rem;
+        border: 1px solid white;
+        background-color: rgba(2, 1, 42, 0.645);
+        border-radius:25px;
+    }
+
+    .upgrade{
+        height:7%;
+        width:100%;
+        background-color:#080B12;
+        padding-right:1rem;
+        padding-top:0.70rem;
+    }
+
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+
+    p.brano{
+        display:inline-block;
+        width:3.9rem;
+    }
+    
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 2s ease;
+    }
+    
+    
+    main{
+        height:90vh;
+        width:100%;
+    }
+    h2{
+        margin-top:1rem;
+        font-size:1.2rem;
+    }
+    .testo-albums h3{
+        font-size:0.83rem;
+        margin-bottom:0.30rem;
+    }
+    ul{
+        margin-bottom:0.90rem;
+    }
+    li{
+        list-style: none;
+        margin-top:0.77rem;
+    }
+    
+    .container{
+        display:flex;
+        flex-direction: row;
+        height:100%;
+        width:100%;
+    }
+    
+    /*MENU*/
+    
+    .menu{
+        width:250px;
+        height:90vh;
+        background-color:#000000;
+        padding-left:1rem;
+    }
+    #spotify{
+        font-size:1.2rem;
+        position:relative;
+        bottom:0.70rem;
+    }
+    
+    .menu .fa-spotify{
+        font-size:2rem;
+    }
+    .menu .logo{
+        padding-top:1rem;
+        padding-bottom:0.75rem;
+    }
+    .menu h2{
+        font-size:0.82rem;
+    }
+    .menu img{
+        padding-top:1.5rem;
+    }
+    
+    .menu i{
+        font-size:1rem;
+        margin-right:0.30rem;
+    }
+    .menu .fa-square-plus{
+        font-size:2rem;
+    }
+    .menu .crea-playlist{
+        position:relative;
+        bottom:0.45rem;
+        font-size: 0.70rem;
+    
+    }
+    .foot-menu p{
+        border-top:1px solid gray;
+        font-size:0.72rem;
+        padding-top:0.40rem;
+        margin-top:0.40rem;
+    }
+    
+    .foot-menu .white{
+        font-size:0.80rem;
+    
+    }
+    
+    /*MAIN PART WITH ALBUMS*/
+    
+    .contents{
+        overflow: scroll;
+        height:80vh;
+        background-color: #141922;
+        width:100%;
+        padding-left:1.5rem;
+    }
+    .border-radius img{
+        border-radius: 50%;
+    }
+    
+    .albums{
+        margin-top:1.7rem;
+        margin-bottom:7rem;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+    }
+    .albums img{
+        width:100%;
+        height:100%;
+        margin-bottom:0.80rem;
+        object-fit: cover;
+        display:block;
+    }
+    .testo-albums{
+        text-align:center;
+        font-size:0.60rem;
+    }
+    
+    /* NAV TASTI IN EVIDENZA, SOTTO "effettua l' upgrade"*/
+    
+    .evidenza{
+        height:4%;
+        flex-wrap:wrap;
+        padding:4rem;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top:1rem;
+        flex-wrap:wrap;
+        background-color: #141922;
+    }
+    .evidenza div{
+        margin-right:1rem;
+        font-size:0.70rem;
+    }
+    .evidenza div:first-child{
+        text-decoration:underline 2px yellowgreen;
+    }
+    .evidenza div:last-child{
+        margin-top:1.6rem;
+    }
+
+    .contents h2{
+        margin-top:1.5rem;
+        font-size:1.12rem;
+    }
+
+
+
+
+    /*FOOTER*/
+    footer{
+        width: 100%;
+        height:10vh;
+        background-color: #282828;
+        position:fixed;
+        z-index:1;
+    }
+    
+    .container-footer{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        padding:0.95rem;
+    }
+    p.brano{
+        width:3.9rem;
+    }
+    
+    .flex-row{
+        display:flex;
+        flex-direction:row;
+    }
+    
+    
+    .container-sinister{
+        width:2.5rem;
+        height:2.5rem;
+        margin-right:0.50rem;
+    }
+    .container-sinister img{
+        width:100%;
+        object-fit: cover;
+        display:block;
+    }
+    
+    
+    
+    .icons{
+        margin-left:2rem;
+    }
+    .icons i{
+        padding-top:0.55rem;
+        margin-right:0.60rem;
+        font-size:0.70rem;
+    }
+    
+    
+    .music{
+        font-size: 1.2rem;
+        padding-left:1rem;
+        padding-right:1rem;
+    }
+    .music i{
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+    
+    
+    /* classi di colori generali per il colore del testo*/
+    
+    .text-gray{
+        color:gray;
+        font-size:0.60rem;
+    }
+    .text-white{
+        color:white;
+        font-size:0.60rem;
+    }
+    
+    .flex-column{
+        display:flex;
+        flex-direction:column;
+        width: 45%;
+    }
+    
+    /*BARRA VOLUME*/ 
+    
+    .barra-volume{
+        background-color: white;
+        border-radius: 20px;
+        align-self:center;
+        height:0.20rem;
+        width:7rem;
+        margin-bottom:0.50rem;
+        position:relative;
+    }
+    .ball-volume{
+        background-color: white;
+        height:0.75rem;
+        width:0.75rem;
+        border-radius:50%;
+        display:none;
+    
+        position:absolute;
+        bottom:0.090rem;
+        top:0.0001rem;
+        left:18%;
+    }
+    /*barra volume grande*/
+    .grande{
+        width:10rem;
+        margin:0 0.40rem 0 0.40rem;
+        margin-right:2rem;
+    }
+    .container-barragrande{
+        margin-top:0.50rem;
+        padding-left:2rem;
+    }
+    .volume{
+        background-color: lightgreen;
+        width:20%;
+        height:100%;
+        display:none;
+    }
+    .barra-volume:active .volume{
+        display:block;
+        transition: 1s ease-in;
+    }
+    .barra-volume:active .ball-volume{
+        display:block;
+        transition: 1s ease-in;
+    
+    }
+    
+    .text-gray:hover{
+        color:white;
+        transition: all 0.80s ease;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    .brano:hover{
+        text-decoration: underline;
+    }
+}
+
+
+
+/*MOBILE SMALL*/
+
+@media screen and (min-width:576px) and (max-width:767px){
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 2s ease;
+    }
+    
+    
+    main{
+        height:90vh;
+        width:100%;
+    }
+    h2{
+        margin-top:1rem;
+        font-size:1.2rem;
+    }
+    .testo-albums h3{
+        font-size:0.83rem;
+        margin-bottom:0.30rem;
+    }
+    ul{
+        margin-bottom:0.90rem;
+    }
+    li{
+        list-style: none;
+        margin-top:0.77rem;
+    }
+    
+    .container{
+        display:flex;
+        flex-direction: row;
+        height:100%;
+        width:100%;
+    }
+    
+    /*MENU*/
+    
+    .menu{
+        width:250px;
+        height:90vh;
+        background-color:#000000;
+        padding-left:1rem;
+    }
+    #spotify{
+        font-size:1.2rem;
+        position:relative;
+        bottom:0.70rem;
+    }
+    
+    .menu .fa-spotify{
+        font-size:2rem;
+    }
+    .menu .logo{
+        padding-top:1rem;
+        padding-bottom:0.75rem;
+    }
+    .menu h2{
+        font-size:0.82rem;
+    }
+    .menu img{
+        padding-top:1.5rem;
+    }
+    
+    .menu i{
+        font-size:1rem;
+        margin-right:0.30rem;
+    }
+    .menu .fa-square-plus{
+        font-size:2rem;
+    }
+    .menu .crea-playlist{
+        position:relative;
+        bottom:0.45rem;
+        font-size: 0.70rem;
+    
+    }
+    .foot-menu{
+        position:relative;
+        top:52%;
+    }
+    .foot-menu p{
+        border-top:1px solid gray;
+        font-size:0.72rem;
+        padding-top:0.40rem;
+        margin-top:0.40rem;
+    }
+    
+    .foot-menu .white{
+        font-size:0.80rem;
+    
+    }
+    /* EFFETTUA L' UPGRADE*/
+    
+    .upgrade{
+        height:8%;
+        width:100%;
+        background-color:#080B12;
+        padding-right:1rem;
+        padding-top:0.70rem;
+    }
+    
+    .upgrade div{
+        position:relative;
+        left:55%;
+        width:48%;
+        text-align:center;
+        font-size:0.60rem;
+        padding: 0.80rem;
+        border: 1px solid white;
+        background-color: rgba(2, 1, 42, 0.645);
+        border-radius:25px;
+    }
+    /* NAV TASTI IN EVIDENZA, SOTTO "effettua l' upgrade"*/
+    
+    .evidenza{
+        height:10%;
+        flex-wrap:wrap;
+        padding:2rem;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top:1rem;
+        background-color: #141922;
+    }
+    .evidenza div{
+        margin-right:1rem;
+        font-size:0.70rem;
+        width:calc(100% / 3 - 1rem);
+    }
+    /*MAIN PART WITH ALBUMS*/
+    
+    .contents{
+        overflow: scroll;
+        height:80vh;
+        background-color: #141922;
+        width:100%;
+        padding-left:1.5rem;
+    }
+    .square{
+        width:calc(100% / 2 - 1rem);
+        height: 40%;
+        margin-right:0.50rem;
+        margin-bottom:0.50rem;
+    }
+    .border-radius img{
+        border-radius: 50%;
+    }
+    
+    .albums{
+        margin-top:1.7rem;
+        margin-bottom:7rem;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+    }
+    .albums img{
+        width:100%;
+        height:100%;
+        margin-bottom:0.80rem;
+        object-fit: cover;
+        display:block;
+    }
+    .testo-albums{
+        text-align:center;
+        font-size:0.60rem;
+    }
+    
+    /*FOOTER*/
+    footer{
+        width: 100%;
+        height:10vh;
+        background-color: #282828;
+        position:fixed;
+        z-index:1;
+    }
+    
+    .container-footer{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        padding:0.95rem;
+    }
+    
+    .flex-row{
+        display:flex;
+        flex-direction:row;
+    }
+    
+    
+    .container-sinister{
+        width:2.5rem;
+        height:2.5rem;
+        margin-right:0.50rem;
+    }
+    .container-sinister img{
+        width:100%;
+        object-fit: cover;
+        display:block;
+    }
+    
+    
+    
+    .icons{
+        margin-left:2.5rem;
+    }
+    .icons i{
+        padding-top:0.55rem;
+        margin-right:0.80rem;
+        font-size:0.80rem;
+    }
+    
+    
+    .music{
+        font-size:0.90rem;
+        margin-right:0rem;
+    }
+    .music i{
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+    
+    
+    /* classi di colori generali per il colore del testo*/
+    
+    .text-gray{
+        color:gray;
+        font-size:0.60rem;
+    }
+    .text-white{
+        color:white;
+        font-size:0.60rem;
+    }
+    
+    .flex-column{
+        display:flex;
+        flex-direction:column;
+    }
+    
+    /*BARRA VOLUME*/ 
+    
+    .barra-volume{
+        background-color: white;
+        border-radius: 20px;
+        align-self:center;
+        height:0.20rem;
+        width:1.5rem;
+        margin-bottom:0.50rem;
+        position:relative;
+    }
+    .ball-volume{
+        background-color: white;
+        height:0.75rem;
+        width:0.75rem;
+        border-radius:50%;
+        display:none;
+    
+        position:absolute;
+        bottom:0.090rem;
+        top:0.0001rem;
+        left:18%;
+    }
+    /*barra volume grande*/
+    .grande{
+        width:7rem;
+        margin:0 0.10rem 0 0.101rem;
+        margin-right:1rem;
+    }
+    .container-barragrande{
+        margin-top:0.50rem;
+        padding-left:1rem;
+    }
+    .volume{
+        background-color: lightgreen;
+        width:20%;
+        height:100%;
+        display:none;
+    }
+    .barra-volume:active .volume{
+        display:block;
+        transition: 1s ease-in;
+    }
+    .barra-volume:active .ball-volume{
+        display:block;
+        transition: 1s ease-in;
+    
+    }
+    
+    .text-gray:hover{
+        color:white;
+        transition: all 0.80s ease;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    .brano:hover{
+        text-decoration: underline;
+    }
+
+    p.brano{
+        display:inline-block;
+        width:3.9rem;
+    }
+
+    .evidenza div:first-child{
+        text-decoration:underline 2px yellowgreen;
+    }
+
+    div.last-icons{
+        position:relative;
+        right:1rem;
+    }
+
+    .contents h2{
+        margin-top:1.5rem;
+        font-size:1.12rem;
+    }
+    
+}
+
+
+/*EXTRA SMALL*/
+
+@media screen and (max-width:575px) {
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 2s ease;
+    }
+    
+    
+    main{
+        height:90vh;
+        width:100%;
+    }
+    h2{
+        margin-top:1rem;
+        font-size:1.2rem;
+    }
+    .testo-albums h3{
+        font-size:0.83rem;
+        margin-bottom:0.30rem;
+    }
+    ul{
+        margin-bottom:0.90rem;
+    }
+    li{
+        list-style: none;
+        margin-top:0.77rem;
+    }
+    
+    .container{
+        display:flex;
+        flex-direction: row;
+        height:100%;
+        width:100%;
+    }
+    
+    /*MENU*/
+    
+    .menu{
+        width:50px;
+        height:90vh;
+        background-color:#000000;
+        padding-left:1rem;
+    }
+    #spotify{
+        font-size:1.2rem;
+        position:relative;
+        bottom:0.70rem;
+    }
+    
+    .menu .fa-spotify{
+        font-size:2rem;
+    }
+    .menu .logo{
+        padding-top:1rem;
+        padding-bottom:0.75rem;
+    }
+    .menu h2{
+        font-size:0.82rem;
+    }
+    .menu img{
+        padding-top:1.5rem;
+    }
+    
+    .menu i{
+        font-size:1rem;
+        margin-right:0.30rem;
+    }
+    .menu .fa-square-plus{
+        font-size:2rem;
+    }
+    .menu .crea-playlist{
+        position:relative;
+        bottom:0.45rem;
+        font-size: 0.70rem;
+    
+    }
+    .foot-menu{
+        position:relative;
+        top:78%;
+    }
+    .foot-menu p{
+        border-top:1px solid gray;
+        font-size:0.72rem;
+        padding-top:0.40rem;
+        margin-top:0.40rem;
+    }
+    
+    .foot-menu .white{
+        font-size:0.80rem;
+    
+    }
+    /* EFFETTUA L' UPGRADE*/
+    
+    .upgrade{
+        height:8%;
+        width:100%;
+        background-color:#080B12;
+        padding-right:1rem;
+        padding-top:0.70rem;
+    }
+    
+    .upgrade div{
+        position:relative;
+        left:55%;
+        width:48%;
+        text-align:center;
+        font-size:0.60rem;
+        padding: 0.80rem;
+        border: 1px solid white;
+        background-color: rgba(2, 1, 42, 0.645);
+        border-radius:25px;
+    }
+    /* NAV TASTI IN EVIDENZA, SOTTO "effettua l' upgrade"*/
+    
+    .evidenza{
+        height:10%;
+        flex-wrap:wrap;
+        padding:1rem;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top:1rem;
+        background-color: #141922;
+    }
+    .evidenza div{
+        margin-right:1rem;
+        font-size:0.70rem;
+        width:calc(100% / 4 - 1rem);
+    }
+    /*MAIN PART WITH ALBUMS*/
+    
+    .contents{
+        overflow: scroll;
+        height:80vh;
+        background-color: #141922;
+        width:100%;
+        padding-left:1.5rem;
+    }
+    .square{
+        width:calc(100% / 2 - 1rem);
+        height: 40%;
+        margin-right:0.50rem;
+        margin-bottom:0.50rem;
+    }
+    .border-radius img{
+        border-radius: 50%;
+    }
+    
+    .albums{
+        margin-top:1.7rem;
+        margin-bottom:7rem;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+    }
+    .albums img{
+        width:100%;
+        height:100%;
+        margin-bottom:0.80rem;
+        object-fit: cover;
+        display:block;
+    }
+    .testo-albums{
+        text-align:center;
+        font-size:0.60rem;
+    }
+    
+    /*FOOTER*/
+    footer{
+        width: 100%;
+        height:10vh;
+        background-color: #282828;
+        position:fixed;
+        z-index:1;
+    }
+    
+    .container-footer{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        padding:0.95rem;
+    }
+    
+    .flex-row{
+        display:flex;
+        flex-direction:row;
+    }
+    
+    
+    .container-sinister{
+        width:2.5rem;
+        height:2.5rem;
+        margin-right:0.50rem;
+    }
+    .container-sinister img{
+        width:100%;
+        object-fit: cover;
+        display:block;
+    }
+    
+    
+    
+    .icons{
+        margin-left:2.5rem;
+    }
+    .icons i{
+        padding-top:0.55rem;
+        margin-right:0.80rem;
+        font-size:0.80rem;
+    }
+    
+    
+    .music{
+        font-size:0.90rem;
+        margin-right:0rem;
+    }
+    .music i{
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+    
+    
+    /* classi di colori generali per il colore del testo*/
+    
+    .text-gray{
+        color:gray;
+        font-size:0.60rem;
+    }
+    .text-white{
+        color:white;
+        font-size:0.60rem;
+    }
+    
+    .flex-column{
+        display:flex;
+        flex-direction:column;
+    }
+    
+    /*BARRA VOLUME*/ 
+    
+    .barra-volume{
+        background-color: white;
+        border-radius: 20px;
+        align-self:center;
+        height:0.20rem;
+        width:1.5rem;
+        margin-bottom:0.50rem;
+        position:relative;
+    }
+    .ball-volume{
+        background-color: white;
+        height:0.75rem;
+        width:0.75rem;
+        border-radius:50%;
+        display:none;
+    
+        position:absolute;
+        bottom:0.090rem;
+        top:0.0001rem;
+        left:18%;
+    }
+    /*barra volume grande*/
+    .grande{
+        width:7rem;
+        margin:0 0.10rem 0 0.101rem;
+        margin-right:1rem;
+    }
+    .container-barragrande{
+        margin-top:0.50rem;
+        padding-left:1rem;
+    }
+    .volume{
+        background-color: lightgreen;
+        width:20%;
+        height:100%;
+        display:none;
+    }
+    .barra-volume:active .volume{
+        display:block;
+        transition: 1s ease-in;
+    }
+    .barra-volume:active .ball-volume{
+        display:block;
+        transition: 1s ease-in;
+    
+    }
+    
+    .text-gray:hover{
+        color:white;
+        transition: all 0.80s ease;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    .brano:hover{
+        text-decoration: underline;
+    }
+
+    p.brano{
+        line-height:0.50rem;
+    }
+
+
+    .evidenza div:first-child{
+        text-decoration:underline 2px yellowgreen;
+    }
+
+    div.last-icons{
+        position:relative;
+        right:1.5rem;
+    }
+
+    .text{
+        display:none;
+    }
+
+    .first-icons{
+        display:flex;
+        flex-direction:column;
+        margin-left:0.90rem;
+    }
+
+    .contents h2{
+        margin-top:1.5rem;
+        font-size:1.12rem;
+    }
+    
+}
+
+/*HEIGHT 350PX*/
+
+
+
+@media screen and (max-height:350px) {
+
+    *{
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 2s ease;
+    }
+    
+    
+    main{
+        height:90vh;
+        width:100%;
+    }
+    h2{
+        margin-top:1rem;
+        font-size:1.2rem;
+    }
+    .testo-albums h3{
+        font-size:0.83rem;
+        margin-bottom:0.30rem;
+    }
+    ul{
+        margin-bottom:0.90rem;
+    }
+    li{
+        list-style: none;
+        margin-top:0.77rem;
+    }
+    
+    .container{
+        display:flex;
+        flex-direction: row;
+        height:90vh;
+        width:100%;
+    }
+    
+    /*MENU*/
+    
+    .menu{
+        width:250px;
+        height:90vh;
+        background-color:#000000;
+        padding-left:1rem;
+        overflow:scroll;
+    }
+    #spotify{
+        font-size:1.2rem;
+        position:relative;
+        bottom:0.70rem;
+    }
+    
+    .menu .fa-spotify{
+        font-size:2rem;
+    }
+    .menu .logo{
+        padding-top:1rem;
+        padding-bottom:0.75rem;
+    }
+    .menu h2{
+        font-size:0.82rem;
+    }
+    .menu img{
+        padding-top:1.5rem;
+    }
+    
+    .menu i{
+        font-size:1rem;
+        margin-right:0.30rem;
+    }
+    .menu .fa-square-plus{
+        font-size:2rem;
+    }
+    .menu .crea-playlist{
+        position:relative;
+        bottom:0.45rem;
+        font-size: 0.70rem;
+    
+    }
+    .foot-menu{
+        position:relative;
+        top:52%;
+    }
+    .foot-menu p{
+        border-top:1px solid gray;
+        font-size:0.72rem;
+        padding-top:0.40rem;
+        margin-top:0.40rem;
+    }
+    
+    .foot-menu .white{
+        font-size:0.80rem;
+    
+    }
+    /* EFFETTUA L' UPGRADE*/
+    
+    .upgrade{
+        height:8%;
+        width:100%;
+        background-color:#080B12;
+        padding-right:1rem;
+        padding-top:0.70rem;
+    }
+    
+    .upgrade div{
+        position:relative;
+        left:78%;
+        width:23%;
+        text-align:center;
+        font-size:0.60rem;
+        padding: 0.80rem;
+        border: 1px solid white;
+        background-color: rgba(2, 1, 42, 0.645);
+        border-radius:25px;
+    }
+    /* NAV TASTI IN EVIDENZA, SOTTO "effettua l' upgrade"*/
+    
+    .evidenza{
+        height:10%;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top:1rem;
+        background-color: #141922;
+    }
+    .evidenza div{
+        margin-right:1rem;
+        font-size:0.70rem;
+    }
+    
+    /*MAIN PART WITH ALBUMS*/
+    
+    .contents{
+        overflow: scroll;
+        height:80vh;
+        background-color: #141922;
+        width:100%;
+        padding-left:1.5rem;
+    }
+    .square{
+        width:calc(100% / 6 - 1rem);
+        height: 15.5%;
+        margin-right:1rem;
+    }
+    .border-radius img{
+        border-radius: 50%;
+    }
+    
+    .albums{
+        margin-top:1.7rem;
+        margin-bottom:7rem;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+    }
+    .albums img{
+        width:100%;
+        height:100%;
+        margin-bottom:0.80rem;
+        object-fit: cover;
+        display:block;
+    }
+    .testo-albums{
+        text-align:center;
+        font-size:0.60rem;
+    }
+    
+    /*FOOTER*/
+    footer{
+        width: 100%;
+        height:10vh;
+        background-color: #282828;
+        position:fixed;
+        z-index:1;
+    }
+    
+    .container-footer{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        padding:0.95rem;
+    }
+    
+    .flex-row{
+        display:flex;
+        flex-direction:row;
+    }
+    
+    
+    .container-sinister{
+        width:2.5rem;
+        height:2.5rem;
+        margin-right:0.50rem;
+    }
+    .container-sinister img{
+        width:100%;
+        object-fit: cover;
+        display:block;
+    }
+    
+    
+    
+    .icons{
+        margin-left:2.5rem;
+    }
+    .icons i{
+        padding-top:0.55rem;
+        margin-right:0.80rem;
+        font-size:0.80rem;
+    }
+    
+    
+    .music{
+        font-size: 1rem;
+        margin-right:2rem;
+        padding-left:6rem;
+        margin-bottom:1rem;
+    }
+    .music i{
+        padding-right:1rem;
+        padding-left:1rem;
+    }
+    
+    
+    /* classi di colori generali per il colore del testo*/
+    
+    .text-gray{
+        color:gray;
+        font-size:0.60rem;
+    }
+    .text-white{
+        color:white;
+        font-size:0.60rem;
+    }
+    
+    .flex-column{
+        display:flex;
+        flex-direction:column;
+    }
+    
+    /*BARRA VOLUME*/ 
+    
+    .barra-volume{
+        background-color: white;
+        border-radius: 20px;
+        align-self:center;
+        height:0.20rem;
+        width:7rem;
+        margin-bottom:0.50rem;
+        position:relative;
+    }
+    .ball-volume{
+        background-color: white;
+        height:0.75rem;
+        width:0.75rem;
+        border-radius:50%;
+        display:none;
+    
+        position:absolute;
+        bottom:0.090rem;
+        top:0.0001rem;
+        left:18%;
+    }
+    /*barra volume grande*/
+    .grande{
+        width:20rem;
+        margin:0 0.50rem 0 0.50rem;
+        margin-right:10rem;
+    }
+    .container-barragrande{
+        margin-top:0.50rem;
+        padding-left:2.5rem;
+    }
+    .volume{
+        background-color: lightgreen;
+        width:20%;
+        height:100%;
+        display:none;
+    }
+    .barra-volume:active .volume{
+        display:block;
+        transition: 1s ease-in;
+    }
+    .barra-volume:active .ball-volume{
+        display:block;
+        transition: 1s ease-in;
+    
+    }
+    
+    .text-gray:hover{
+        color:white;
+        transition: all 0.80s ease;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    .brano:hover{
+        text-decoration: underline;
+    }
+    
+
+
+    
+}
